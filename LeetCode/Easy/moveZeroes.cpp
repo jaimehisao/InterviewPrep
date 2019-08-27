@@ -9,12 +9,7 @@ void moveZeroes(vector<int>& nums) {
             if(nums.at(i) == 0){
                 nums.erase(nums.begin() + i);
                 nums.push_back(0);
-                //cout<<i<<endl;
                 numS--;
-                for(int i = 0; i < nums.size(); i++){
-                cout<<nums.at(i)<<" ";
-                }
-                cout<<endl;
                 i--;
             }
         }
